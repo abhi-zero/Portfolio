@@ -1,0 +1,17 @@
+button{
+    padding: 7px 15px;
+    border: 1px solid var(--teal-light-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.primary-btn{
+    background-color: var(--darkGray-color);
+    color: white;
+}
+
+.primary-btn:hover{
+    background-color: var(--teal-light-color);
+    color:  var(--darkGray-color);
+}
