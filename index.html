@@ -1,13 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="stylesheet" href="./src/styles/canvas.css" />
+    <link rel="stylesheet" href="./src/styles/helper_classes.css" />
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <title>Portfolio.me</title>
   </head>
   <body>
@@ -15,27 +17,183 @@
       <header>
         <nav>
           <div class="logo-menucta">
-             <h2>Abhi</h2>
-             <div class="menu-button" >
-              <h3 class="menu-text" data-stage="close">Menu<i class="ri-arrow-down-s-line"></i></h3>
-              <button class="menu-icon" data-stage="close"><i class="ri-arrow-down-s-line"></i></button>
-             </div>
+            <h2>Abhi</h2>
+            <div class="menu-button">
+              <h3 class="menu-text" data-stage="close">
+                Menu<i class="ri-arrow-down-s-line"></i>
+              </h3>
+              <button class="menu-icon" data-stage="close">
+                <i class="ri-arrow-down-s-line"></i>
+              </button>
+            </div>
           </div>
           <div class="nav-links">
             <ul>
               <li><a class="nav-link" href="">Home</a></li>
-              <li><a class="nav-link"  href="">About me</a></li>
-              <li><a class="nav-link"  href="">Projects</a></li>
-              <li><a class="nav-link"  href="">let's connect</a></li>
+              <li><a class="nav-link" href="">About me</a></li>
+              <li><a class="nav-link" href="">Projects</a></li>
+              <li><a class="nav-link" href="">let's connect</a></li>
             </ul>
           </div>
         </nav>
       </header>
 
+      <section class="hero-section">
+        <div class="canvas-div">
+          <canvas class="canvas1"></canvas>
+        </div>
+        <div class="text-content">
+          <h1 class="heading" text-split char-type>
+            I’m <span class="name" id="name"></span> <br />I learn by breaking
+            things.
+          </h1>
+          <div class="cta">
+            <button class="primary-btn">See My Learning Projects</button>
+          </div>
+        </div>
+        <div class="cta-section">
+          <a href="">Scroll Down <i class="ri-arrow-down-s-line"></i></a>
+        </div>
+      </section>
+
+      <section class="about-me section">
+        <div class="intro">
+          <h1 class="heading">Why I Code</h1>
+          <h4 class="subtext">
+            Hi, I'm Abhinandan Bhatti. I break code to understand it.
+          </h4>
+          <p class="desription">
+            BCA grad who discovered real learning happens when tutorials fail.
+            Now I build, break & repeat.
+          </p>
+        </div>
+        <div class="wrapper section">
+          <h2>Journey</h2>
+          <div class="container">
+            <svg
+              viewBox="0 0 900 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H9.89998Z"
+                fill="#D9D9D9"
+              />
+              <mask
+                id="mask0_0_1"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="900"
+                height="10"
+              >
+                <path
+                  d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H9.89998Z"
+                  fill="#D9D9D9"
+                />
+              </mask>
+              <g mask="url(#mask0_0_1)">
+                <rect class="mask" y="-49" height="99" fill="black" />
+              </g>
+            </svg>
+            <a href="#article1" data-college-days>College Dayz</a>
+            <a href="#article2" data-tutorial-hell>Tutorial Hell</a>
+            <a href="#article3" data-now>Now</a>
+             <div class="content">
+              <!-- College Days -->
+            <article class="phase" id="article1">
+              <h3 class="anim">The Post-COVID Coders Club</h3>
+              <p class="anim">
+                I started coding in college because I chose to pursue a
+                Bachelor of Computer Applications (BCA). My admission took
+                place post-COVID, which meant adjusting to a new normal of
+                learning. But let me tell you, the
+                <strong class="teal">best year</strong> was my 3rd year!
+              </p>
+              <p class="anim">
+                There was this <strong class="pink">girl I talked to daily</strong>—don’t
+                worry, not a love story, just a fun one. And I teamed up with
+                friends to build my first project: a VB.NET Grocery Store
+                Management System.
+              </p>
+              <ol>
+                <li class="anim">Staff ranking and info</li>
+                <li class="anim">Dynamic stock updates</li>
+                <li class="anim">Billing system (print bills only)</li>
+                <li class="anim">Auto-decrease in stock quantity after purchases</li>
+              </ol>
+              <p class="anim">
+                That project didn’t just teach us coding—it taught us
+                teamwork, laughter, and the joy of finally getting something
+                to work after hours of debugging.
+              </p>
+            </article>
+  
+            <!-- Tutorial Hell -->
+            <article class="phase" id="article2">
+              <h3 class="anim">Tutorial Hell—Population: Me</h3>
+              <p class="anim">
+                After graduation, I decided I wanted to become a
+                <strong>frontend developer</strong>. So, I went back to the
+                basics—HTML, CSS, and JavaScript. For the first 10-15 days, I
+                felt like I was learning... but then I realized I was just
+                <strong>watching tutorials without practicing.</strong>
+              </p>
+              <p class="anim">It was a cycle:</p>
+              <ol>
+                <li class="anim">Watch tutorial.</li>
+                <li class="anim">Take notes.</li>
+                <li class="anim">Feel productive.</li>
+                <li class="anim">Repeat—without ever writing actual code!</li>
+              </ol>
+              <p class="anim">
+                Then one day, I stumbled upon a YouTuber who said,
+                <em>'Make projects, even if they’re garbage.'</em> And that
+                hit me! I realized that
+                <strong>building bad projects</strong> is still better than
+                watching hours of tutorials. So, I rolled up my sleeves and
+                started making things, even if they were imperfect.
+              </p>
+            </article> 
+
+              <!-- Current Mindset -->
+              <article class="phase"  id="article3">
+                <h3 class="anim">Imperfect Projects, Perfect Progress</h3>
+                <p class="anim">These days, I follow a simple mantra:</p>
+                <ol>
+                  <li class="anim">Do a little research.</li>
+                  <li class="anim">Start building, no matter how messy.</li>
+                  <li class="anim">Get stuck (because I always do).</li>
+                  <li class="anim">Watch tutorials or search for solutions.</li>
+                  <li class="anim">Refactor later.</li>
+                </ol>
+                <p class="anim">
+                  Sure, my projects might not be perfect at first, but they get
+                  better as I go.
+                  <strong 
+                    >Every mistake is a lesson, every refactor is
+                    progress.</strong 
+                  >
+                  Little by little, I’m getting there—and having fun along the
+                  way.
+                </p>
+              </article>
+            </div>
+            <div class="chart">
+              <h2>My Skills</h2>
+              <canvas id="myChart" class="canvas2"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="fake"></section>
     </main>
 
+    <script type="module" src="./src/scripts/chart.js"></script>
     <script type="module" src="./src/scripts/animation.js"></script>
+    <script type="module" src="./src/scripts/textAnimations.js"></script>
+    <script type="module" src="./src/scripts/canvas.js"></script>
     <script type="module" src="./src/scripts/main.js"></script>
-
   </body>
 </html>
