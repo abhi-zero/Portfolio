@@ -33,6 +33,7 @@
   --darkGray-color: hsl(240, 4%, 16%);
   --darkGray-light-color: hsl(240, 4%, 26%);
   --darkGray-dark-color: hsl(240, 4%, 10%);
+
   --teal-color: hsl(180, 89%, 22%);
   --teal-light-color: hsl(180, 89%, 32%);
   --teal-dark-color: hsl(180, 89%, 14%);
@@ -84,6 +85,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: var(--ff1);
+  overflow-x: hidden;
 }
 
 /* Remove list styles on ul, ol elements with a list role */
@@ -152,6 +154,7 @@ select {
 header nav{
     padding: 10px 100px;
     position: relative;
+    background-color: var(--darkGray-color);
     border-block: 1px solid white ;
 
 }
@@ -168,7 +171,10 @@ header nav .logo-menucta .menu-text{
 }
 header nav .logo-menucta .menu-icon{
     display: none;
+    border-radius: 25%;
+    border: none;
 }
+
 
 header nav .nav-links ul{
     position: absolute;
@@ -177,6 +183,9 @@ header nav .nav-links ul{
     top: 100%;
     transform: translateX("100%");
     left: 0;
+    z-index:  1;
+    background-color: hsl(from var(--darkGray-dark-color) h s l / .6);
+    backdrop-filter: blur(10px);
     padding: 30px 100px;
     overflow: hidden;
 }
@@ -210,5 +219,182 @@ header nav .nav-links ul li a:hover:after{
 
 }
 
+/* Hero section */
+
+.hero-section{
+  position: relative;
+  height: calc(100vh - 58px);
+  width: 100vw;
+  
+}
+
+.hero-section .text-content{
+  position: absolute;
+  top: 35%;
+  left: 0%;
+  padding: 0 100px;
+}
+
+.hero-section .text-content .heading{
+  font-size: 5vw;
+  line-height: 1.2;
+  letter-spacing: 2px;
+}
+.name{
+  color: var(--teal-light-color);
+  padding-left: 10px;
+}
+
+.hero-section .cta-section{
+  padding: 0 100px;
+  position: absolute;
+  top: 80%;
+  left: 0;
+}
+.hero-section .cta-section a{
+  font-size: 1.2rem ;
+  letter-spacing: 2px;
+  color: var(--teal-light-color);
+}
+
+.about-me{
+  height: 100vh;
+}
+.section{
+  margin: 50px 100px;
+}
+
+.about-me .intro .heading{
+  font-size: 4vw;
+  width: fit-content;
+  color: var(--teal-light-color);
+  border-bottom:5px solid var(--Gray-dark-color);
+  line-height: 1.2;
+}
+
+.about-me .intro .subtext{
+  font-size: 2vw;
+  padding-top: 30px;
+  font-weight: 500;
+}
+.about-me .intro .description{
+  font-size: 1.8vw;
+}
 
 
+.wrapper>h2{
+  width: fit-content;
+ font-size: 2vw;
+ margin-bottom: 30px;
+ border-bottom: 2px solid var(--teal-light-color);
+}
+
+.wrapper .container{
+  position: relative;
+}
+
+svg{
+  width: 80%;
+}
+
+svg .mask{
+  width: 0;
+}
+
+
+.wrapper .container a[data-tutorial-hell]{
+  position: absolute;
+  top: 2%;
+  left: 37%;
+}
+.wrapper .container a[data-now]{
+  position: absolute;
+  top: 2%;
+  left: 77%;
+}
+
+.content{
+  display: flex;
+  gap: 50px;
+  padding-top: 50px;
+}
+
+.phase{
+  min-width: 900px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 3px solid  var(--teal-light-color);
+  padding: 30px;
+  border-radius:5px ;
+}
+
+ .phase h3{
+  font-size: 2vw;
+  border-bottom: 2px solid var(--teal-light-color);
+  font-weight: 500;
+}
+.phase p{
+  font-size: 1.2vw;
+  font-weight: 400;
+}
+
+ .phase strong{
+  font-weight: 500;
+}
+
+ .phase ol li{
+  width: fit-content;
+  border-bottom: 1.5px solid var(--Gray-light-color);
+  font-size: 1.2vw;
+
+}
+
+.fake{
+  height: 100vh;
+}
+
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  header nav {
+    padding: 10px 30px;
+  }
+  header nav .nav-links ul {
+    padding: 30px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  header nav {
+    padding: 10px 10px;
+  }
+  header nav .logo-menucta .menu-text {
+    display: none;
+  }
+  header nav .logo-menucta .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  header nav .nav-links ul li a {
+    font-size: 10vw;
+    padding: 8px;
+  }
+  header nav .nav-links ul {
+    padding: 20px 10px;
+  }
+
+.hero-section .text-content{
+  padding: 0 30px;
+}
+
+.hero-section .cta-section{
+  padding: 0 30px;
+  top: 70%;
+}
+.hero-section .cta-section a{
+  font-size: 1rem ;
+}
+
+}
