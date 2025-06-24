@@ -14,4 +14,13 @@ button{
 .primary-btn:hover{
     background-color: var(--teal-light-color);
     color:  var(--darkGray-color);
+    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.888));
+}
+
+.secondary-cta{
+    background-color: var(--teal-light-color);
+}
+
+.secondary-cta:hover{
+     filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.888));
 }

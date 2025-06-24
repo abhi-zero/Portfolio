@@ -325,7 +325,7 @@ svg .mask{
   display: flex;
   flex-direction: column;
   gap: 20px;
-  border: 3px solid  var(--teal-light-color);
+
   padding: 30px;
   border-radius:5px ;
 }
@@ -349,6 +349,23 @@ svg .mask{
   border-bottom: 1.5px solid var(--Gray-light-color);
   font-size: 1.2vw;
 
+}
+
+.chart{
+  margin-block: 50px;
+}
+
+.chart h3{
+  width: fit-content;
+    font-size: 2vw;
+    border-bottom: 2px solid var(--teal-light-color);
+  font-weight: 500;
+}
+
+.chart canvas{
+  display: flex;
+  justify-self: center;
+  margin-block:50px ;
 }
 
 .fake{
