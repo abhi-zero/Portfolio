@@ -1,4 +1,13 @@
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { animeRotateIn } from "./textAnimations";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const sections = document.querySelectorAll(".container article");
+const mask = document.querySelector(".mask");
+
+
 
 export function navAnime() {
   const button1 = document.querySelector(".menu-text");
@@ -27,6 +36,14 @@ export function navAnime() {
         ease: "power2.out",
       },
       "one"
+    )
+    .to(
+      ".menu-icon i",
+      {
+        rotateZ: "180deg",
+        ease: "power2.out",
+      },
+      "one"
     );
   tl.pause();
 [button1, button2].forEach((button) => {
@@ -42,3 +59,52 @@ export function navAnime() {
     });
 });
 }
+
+function aboutTimeline(){
+  const scrollTween = gsap.to(sections,{
+    xPercent : -100 * (sections.length - 1),
+    ease:"none",
+    scrollTrigger : {
+      trigger: ".container",
+      pin:true,
+      scrub: 1,
+      start : "top 2%",
+      end: "+=3000",
+      markers:true
+    }
+  })
+  gsap.to(mask, {
+  width: "110%",
+  scrollTrigger: {
+    trigger: ".wrapper",
+    start: "top left",
+    scrub: 1
+  }
+});
+
+sections.forEach((section) => {
+  // grab the scoped text
+  let text = section.querySelectorAll(".anim");
+  
+  // bump out if there's no items to animate
+  if(text.length === 0)  return 
+  
+  // do a little stagger
+  gsap.from(text, {
+    y: -130,
+    opacity: 0,
+    duration: 2,
+    ease: "elastic",
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: section,
+      containerAnimation: scrollTween,
+      start: "left center",
+      markers: true,
+    }
+
+  });
+});
+}
+
+aboutTimeline()
