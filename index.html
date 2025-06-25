@@ -1,110 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/styles/style.css" />
-    <link rel="stylesheet" href="./src/styles/canvas.css" />
-    <link rel="stylesheet" href="./src/styles/helper_classes.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <title>Portfolio.me</title>
-  </head>
-  <body>
-    <main id="app">
-      <header>
-        <nav>
-          <div class="logo-menucta">
-            <h2>Abhi</h2>
-            <div class="menu-button">
-              <h3 class="menu-text" data-stage="close">
-                Menu<i class="ri-arrow-down-s-line"></i>
-              </h3>
-              <button class="menu-icon" data-stage="close">
-                <i class="ri-arrow-down-s-line"></i>
-              </button>
-            </div>
-          </div>
-          <div class="nav-links">
-            <ul>
-              <li><a class="nav-link" href="">Home</a></li>
-              <li><a class="nav-link" href="">About me</a></li>
-              <li><a class="nav-link" href="">Projects</a></li>
-              <li><a class="nav-link" href="">let's connect</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
 
-      <section class="hero-section">
-        <div class="canvas-div">
-          <canvas class="canvas1"></canvas>
-        </div>
-        <div class="text-content">
-          <h1 class="heading" text-split char-type>
-            I’m <span class="name" id="name"></span> <br />I learn by breaking
-            things.
-          </h1>
-          <div class="cta">
-            <button class="primary-btn">See My Learning Projects</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/styles/style.css" />
+  <link rel="stylesheet" href="./src/styles/canvas.css" />
+  <link rel="stylesheet" href="./src/styles/helper_classes.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <title>Portfolio.me</title>
+</head>
+
+<body>
+  <main id="app">
+    <header>
+      <nav>
+        <div class="logo-menucta">
+          <h2>Abhi</h2>
+          <div class="menu-button">
+            <h3 class="menu-text" data-stage="close">
+              Menu<i class="ri-arrow-down-s-line"></i>
+            </h3>
+            <button class="menu-icon" data-stage="close">
+              <i class="ri-arrow-down-s-line"></i>
+            </button>
           </div>
         </div>
-        <div class="cta-section">
-          <a href="">Scroll Down <i class="ri-arrow-down-s-line"></i></a>
+        <div class="nav-links">
+          <ul>
+            <li><a class="nav-link" href="">Home</a></li>
+            <li><a class="nav-link" href="">About me</a></li>
+            <li><a class="nav-link" href="">Projects</a></li>
+            <li><a class="nav-link" href="">let's connect</a></li>
+          </ul>
         </div>
-      </section>
+      </nav>
+    </header>
 
-      <section class="about-me section">
-        <div class="intro">
-          <h1 class="heading">Why I Code</h1>
-          <h4 class="subtext">
-            Hi, I'm Abhinandan Bhatti. I break code to understand it.
-          </h4>
-          <p class="desription">
-            BCA grad who discovered real learning happens when tutorials fail.
-            Now I build, break & repeat.
-          </p>
+    <section class="hero-section">
+      <div class="canvas-div">
+        <canvas class="canvas1"></canvas>
+      </div>
+      <div class="text-content">
+        <h1 class="heading" text-split char-type>
+          I’m <span class="name" id="name"></span> <br />I learn by breaking
+          things.
+        </h1>
+        <div class="cta">
+          <button class="primary-btn">See My Learning Projects</button>
         </div>
-        <div class="wrapper section">
-          <h2>Journey</h2>
-          <div class="container">
-            <svg
-              viewBox="0 0 900 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+      </div>
+      <div class="cta-section">
+        <a href="">Scroll Down <i class="ri-arrow-down-s-line"></i></a>
+      </div>
+    </section>
+
+    <section class="about-me section">
+      <div class="intro">
+        <h1 class="heading">Why I Code</h1>
+        <h4 class="subtext">
+          Hi, I'm Abhinandan Bhatti. I break code to understand it.
+        </h4>
+        <p class="desription">
+          BCA grad who discovered real learning happens when tutorials fail.
+          Now I build, break & repeat.
+        </p>
+      </div>
+      <div class="wrapper section">
+        <h2>Journey</h2>
+        <div class="container">
+          <svg viewBox="0 0 900 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H9.89998Z"
+              fill="#D9D9D9" />
+            <mask id="mask0_0_1" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="900"
+              height="10">
               <path
                 d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H9.89998Z"
-                fill="#D9D9D9"
-              />
-              <mask
-                id="mask0_0_1"
-                style="mask-type: alpha"
-                maskUnits="userSpaceOnUse"
-                x="0"
-                y="0"
-                width="900"
-                height="10"
-              >
-                <path
-                  d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H9.89998Z"
-                  fill="#D9D9D9"
-                />
-              </mask>
-              <g mask="url(#mask0_0_1)">
-                <rect class="mask" y="-49" height="99" fill="black" />
-              </g>
-            </svg>
-            <a href="#article1" data-college-days>College Dayz</a>
-            <a href="#article2" data-tutorial-hell>Tutorial Hell</a>
-            <a href="#article3" data-now>Now</a>
-             <div class="content">
-              <!-- College Days -->
+                fill="#D9D9D9" />
+            </mask>
+            <g mask="url(#mask0_0_1)">
+              <rect class="mask" y="-49" height="99" fill="black" />
+            </g>
+          </svg>
+         <div class="timeline-event">
+           <a href="#article1" data-college-days>College Dayz</a>
+          <a href="#article2" data-tutorial-hell>Tutorial Hell</a>
+          <a href="#article3" data-now>Now</a>
+         </div>
+          <div class="content">
+            <!-- College Days -->
             <article class="phase" id="article1">
-              <h3 class="anim">The Post-COVID Coders Club</h3>
-              <p class="anim">
+              <h3 class="anim">The Post-COVID Coders Club <span class="accord-toggle"><i class="ri-arrow-down-s-line"></i></span></h3>
+              <div class="article-content close">
+                 <p class="anim">
                 I started coding in college because I chose to pursue a
                 Bachelor of Computer Applications (BCA). My admission took
                 place post-COVID, which meant adjusting to a new normal of
@@ -128,17 +117,19 @@
                 teamwork, laughter, and the joy of finally getting something
                 to work after hours of debugging.
               </p>
+              </div>
             </article>
-  
+
             <!-- Tutorial Hell -->
             <article class="phase" id="article2">
-              <h3 class="anim">Tutorial Hell—Population: Me</h3>
+              <h3 class="anim">Tutorial Hell—Population: Me <span class="accord-toggle"><i class="ri-arrow-down-s-line"></i></span></h3>
+              <div class="article-content close">
               <p class="anim">
                 After graduation, I decided I wanted to become a
-                <strong>frontend developer</strong>. So, I went back to the
+                <strong class="purple">frontend developer</strong>. So, I went back to the
                 basics—HTML, CSS, and JavaScript. For the first 10-15 days, I
                 felt like I was learning... but then I realized I was just
-                <strong>watching tutorials without practicing.</strong>
+                <strong >watching tutorials without practicing.</strong>
               </p>
               <p class="anim">It was a cycle:</p>
               <ol>
@@ -155,50 +146,84 @@
                 watching hours of tutorials. So, I rolled up my sleeves and
                 started making things, even if they were imperfect.
               </p>
-            </article> 
+              </div>
+            </article>
 
-              <!-- Current Mindset -->
-              <article class="phase"  id="article3">
-                <h3 class="anim">Imperfect Projects, Perfect Progress</h3>
-                <p class="anim">These days, I follow a simple mantra:</p>
-                <ol>
-                  <li class="anim">Do a little research.</li>
-                  <li class="anim">Start building, no matter how messy.</li>
-                  <li class="anim">Get stuck (because I always do).</li>
-                  <li class="anim">Watch tutorials or search for solutions.</li>
-                  <li class="anim">Refactor later.</li>
-                </ol>
-                <p class="anim">
-                  Sure, my projects might not be perfect at first, but they get
-                  better as I go.
-                  <strong 
-                    >Every mistake is a lesson, every refactor is
-                    progress.</strong 
-                  >
-                  Little by little, I’m getting there—and having fun along the
-                  way.
-                </p>
-              </article>
+            <!-- Current Mindset -->
+            <article class="phase" id="article3">
+              <h3 class="anim">Imperfect Projects, Perfect Progress <span class="accord-toggle"><i class="ri-arrow-down-s-line"></i></span></h3>
+              <div class="article-content close">
+              <p class="anim">These days, I follow a simple mantra:</p>
+              <ol>
+                <li class="anim">Do a little research.</li>
+                <li class="anim">Start building, no matter how messy.</li>
+                <li class="anim">Get stuck (because I always do).</li>
+                <li class="anim">Watch tutorials or search for solutions.</li>
+                <li class="anim">Refactor later.</li>
+              </ol>
+              <p class="anim">
+                Sure, my projects might not be perfect at first, but they get
+                better as I go.
+                <strong class="green">Every mistake is a lesson, every refactor is
+                progress.</strong>
+                Little by little, I’m getting there—and having fun along the
+                way.
+              </p>
+              </div>
+            </article>
+          </div>
+          <div class="chart">
+            <div class="cursor-bg"></div>
+           <div class="skill-container">
+             <h3>My Skills</h3>
+          
+            <div class="skills-section">
+             <!-- dynamically generate -->
+             
             </div>
-            <div class="chart">
-              <h3>My Skills</h3>
-              <canvas id="myChart" class="canvas2"></canvas>
-            </div>
-
-            <div class="intractive-elems">
-              <canvas class="canvas3"></canvas>
-              <button class="secondary-cta"><img src="./src/assets/img/bug-svgrepo-com.svg"  width="25px" alt=""></button>
+             </div>
+            <div class="bug-meme">
+              <div class="meme">
+                <p class="meme-text" text-split word-rotate-in></p>
+              </div>
+              <p class="text">Click this Button</p>
+              <button class="bug-btn secondary-cta" title="Click to see the meme">
+                <i class="ri-bug-line"></i>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="fake"></section>
-    </main>
 
-    <script type="module" src="./src/scripts/chart.js"></script>
-    <script type="module" src="./src/scripts/animation.js"></script>
-    <script type="module" src="./src/scripts/textAnimations.js"></script>
-    <script type="module" src="./src/scripts/canvas.js"></script>
-    <script type="module" src="./src/scripts/main.js"></script>
-  </body>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class=" project-section section">
+      <div class="heading-section">
+        <h1 class="heading">My learning</h1>
+        <h3 class="subtext">Here are a few projects I've built</h3>
+      </div>
+      <div class="projects">
+            <div class="projects-lists">
+              <ul id="projectList">
+                <!-- Project list items will be dynamically generated and inserted here by load_projects.js -->
+              </ul>
+            </div>
+           
+            <div class="projects-content">
+             <!-- Project cards will be dynamically rendered here when a project is selected from the list -->
+            </div>
+           
+        </div>
+    </section>
+    <section class="fake"></section>
+  </main>
+
+  <!-- <script type="module" src="./src/scripts/chart.js"></script> -->
+   <script type="module" src="./src/scripts/load-projects.js"></script>
+  <script type="module" src="./src/scripts/animation.js"></script>
+  <script type="module" src="./src/scripts/textAnimations.js"></script>
+  <script type="module" src="./src/scripts/canvas.js"></script>
+  <script type="module" src="./src/scripts/main.js"></script>
+</body>
+
 </html>
