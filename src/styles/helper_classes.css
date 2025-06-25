@@ -24,3 +24,37 @@ button{
 .secondary-cta:hover{
      filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.888));
 }
+
+
+
+.pink{
+    color: var(--pink-color);
+   
+}
+
+.teal{
+    color: var(--teal-light-color);
+}
+
+.purple{
+    color: var(--Purple-color);
+}
+.green{
+    color: var(--Green-color);
+}
+
+
+.bg{
+   
+
+    background: linear-gradient(transparent,
+    hsl(from var(--gradient-color) h s l / .5)10%,
+    hsl(from var(--gradient-color) h s l / .9));
+     margin: 0;
+    border-radius: 5px;
+  }
+
+  .active{
+    background-color: var(--teal-color);
+    border-radius: 5px;
+  }
