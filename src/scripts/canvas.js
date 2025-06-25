@@ -6,7 +6,7 @@ canvas.height = window.innerHeight;
 
 let particelsArray; 
 
-let mouse = {
+export let mouse = {
     x: null,
     y: null,
     radius : (canvas.height / 80) * (canvas.width / 80)
