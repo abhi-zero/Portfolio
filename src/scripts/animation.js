@@ -107,4 +107,17 @@ sections.forEach((section) => {
 });
 }
 
-aboutTimeline()
+function handleResponsiveScroll() {
+  // Kill all ScrollTriggers before (re)initializing
+  ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+
+  if (window.innerWidth > 900) {
+    aboutTimeline();
+  }
+}
+
+// Initial check
+handleResponsiveScroll();
+
+// Re-check on resize
+window.addEventListener("resize", handleResponsiveScroll);
