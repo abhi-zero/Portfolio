@@ -83,4 +83,5 @@ document.fonts.ready.then(() => {
         })
     });
     scrollIndicator();
+    
 });
