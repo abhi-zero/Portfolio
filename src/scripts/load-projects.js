@@ -1,5 +1,6 @@
 import { createElement } from "./main.js";
-
+import { fade } from "./animation.js";
+import { animeRotateIn } from "./textAnimations.js";
 
 const allProjects = [
   {
@@ -106,7 +107,7 @@ function myFunction_set(color) {
 
 function generatedProjectCard(project) {
     const projectsContainer = document.querySelector(".projects-content");
-    const projectContainer = createElement("div", "project");
+    const projectDiv = createElement("div", "project");
 
     // Project Image
     const projectImg = createElement("img", "projectImg");
@@ -116,10 +117,13 @@ function generatedProjectCard(project) {
     // Project Text Content
     const projectTextContainer = createElement("div", "project-textcontent");
     projectTextContainer.classList.add("bg");
+   
 
     // Title
     const projectTitle = createElement("h2", "project-title");
     projectTitle.textContent = project.projectDetails.title;
+    projectTitle.setAttribute("text-split","");
+    projectTitle.setAttribute("word-slide-right","");
 
     // Description
     const projectDescription = createElement("p", "project-description");
@@ -140,13 +144,13 @@ function generatedProjectCard(project) {
     // Links
     const projectLinks = createElement("div", "links");
     const anchorViewLive = createElement("a", "button");
-    anchorViewLive.classList.add("primary-cta");
+    anchorViewLive.classList.add("primary-btn");
     anchorViewLive.href = project.links.liveSite;
     anchorViewLive.textContent = "View Live";
     anchorViewLive.target = "_blank";
 
     const anchorViewCode = createElement("a", "button");
-    anchorViewCode.classList.add("secondary-cta");
+    anchorViewCode.classList.add("secondary-btn");
     anchorViewCode.href = project.links.code;
     anchorViewCode.textContent = "View Code";
     anchorViewCode.target = "_blank";
@@ -160,15 +164,16 @@ function generatedProjectCard(project) {
     projectTextContainer.appendChild(projectTechs);
     projectTextContainer.appendChild(projectLinks);
 
-    projectContainer.appendChild(projectImg);
-    projectContainer.appendChild(projectTextContainer);
+    projectDiv.appendChild(projectImg);
+    projectDiv.appendChild(projectTextContainer);
 
-    projectsContainer.appendChild(projectContainer);
+    
+    projectsContainer.appendChild(projectDiv);
      const bgColor = project.textBgCssColor 
       myFunction_set(bgColor);
-    console.log( projectContainer);
+      console.log(projectDiv);
+      
     
-
 }
 
 const projectList = document.querySelector("#projectList");
@@ -176,8 +181,6 @@ const projectList = document.querySelector("#projectList");
 function generateList(project,idx){
     const list = createElement("li", "list");
     const listHeading4 = createElement("h4", "project-heading");
-    listHeading4.setAttribute("text-split","true");
-    listHeading4.setAttribute("word-slide-right","true");
     listHeading4.textContent = project.projectDetails.projectName
     listHeading4.setAttribute("data-id", idx);
     list.appendChild(listHeading4);
@@ -217,8 +220,8 @@ projectList.addEventListener("click", (event) => {
     const project = allProjects[clickedId];
     console.log(project);
     if (project) {
-      projectAnimation();
       generatedProjectCard(project);
+      fade();
     }
 });
 
