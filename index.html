@@ -39,7 +39,7 @@
 
     <section class="hero-section">
       <div class="canvas-div">
-        <canvas class="canvas1"></canvas>
+        <canvas class="canvas1" id="canvas1"></canvas>
       </div>
       <div class="text-content">
         <h1 class="hero-heading" text-split char-type>
@@ -214,6 +214,68 @@
             </div>
            
         </div>
+    </section>
+    <section class="contact section">
+      <div class="heading-section">
+        <h1 class="heading">Let's connect</h1>
+        <p class="description">I’m looking for collaborators, mentors, or feedback on my projects. Even a coffee chat helps!</p>
+      </div>
+      <div class="canvas-div">
+        <canvas class="canvas2" id="canvas2"></canvas>
+      </div>
+      <div class="contact-intractiveelem">
+        <form action="">
+          <div class="names row">
+            <div class="inputs elems">
+              <label for="firstName" class="label">First Name</label>
+              <input class="input" type="text" name="firstname" id="firstName" placeholder="Abhi" required>
+              <p class="error">kjsdkj</p>
+            </div>
+            <div class="inputs elems">
+              <label for="lastName" class="label">Last Name</label>
+              <input type="text" class="input" name="lastname" id="lastName" placeholder="Bhatti" required>
+              <p class="error">kjsdkj</p>
+            </div>
+          </div>
+          <div class="email-phone row">
+             <div class="inputs elems">
+              <label for="eMail " class="label">Your email</label>
+              <input type="email" class="input" name="email" id="eMail" placeholder="abhi@mail.com" required>
+              <p class="error">kjsdkj</p>
+            </div>
+            <div class="inputs elems ">
+              <label for="phoneNo" class="label">Phone Number</label>
+              <input type="text" class="input" name="phoneno" id="phoneNo" placeholder="+12 123 456 7890" required>
+              <p class="error">kjsdkj</p>
+            </div>
+          </div>
+          <div class="message">
+            <label class="label" for="textBox">Your message</label>
+            <textarea class="input" name="" id="textBox" placeholder="leave your message"></textarea>
+          </div>
+          <div class="disclaimer-text">
+            <p class="disclaimer">I don’t like spam either, so rest assured, your info stays private and is used only to respond to your message.</p>
+          </div>
+          <div class="cta">
+            <button type="submit" class="button primary-btn">Send message</button>
+          </div>
+        </form>
+        <div class="intractive-elem">
+            <div class="controls">
+        <button class="random-btn btn">Randomiz!</button>
+
+        <div class="spread">
+            <input type="range" name="" id="spread" min="0.1" max="3.1" step=".1"  value="1">
+            <label for="spread">Spread: </label>
+        </div>
+        <div class="sides">
+            <input type="range" name="" id="sides" min="1" max="15" step="1"  value="5">
+            <label for="sides">sides: </label>
+        </div>
+         <button class="reset-btn btn">Reset</button>
+    </div>
+        </div>
+      </div>
     </section>
     <section class="fake"></section>
   </main>
