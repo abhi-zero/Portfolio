@@ -1,6 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { animeRotateIn } from "./textAnimations";
+import { split } from "./textAnimations";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -107,10 +108,21 @@ sections.forEach((section) => {
 });
 }
 
+export function fade(){
+  gsap.from(".project", {
+      duration: 3,
+      opacity: 0,
+      ease: "power2.out",
+      onComplete: () => {
+        split();
+          animeRotateIn("line", false);
+      }
+    })
+}
+
 function handleResponsiveScroll() {
   // Kill all ScrollTriggers before (re)initializing
   ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-
   if (window.innerWidth > 900) {
     aboutTimeline();
   }
