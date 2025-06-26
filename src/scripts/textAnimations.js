@@ -59,13 +59,17 @@ export function animeRotateIn(type, onScroll= true){
   })
 }
 
-document.fonts.ready.then(() => {
-    document.querySelectorAll('[text-split]').forEach((el) => {
+export function split(){
+   document.querySelectorAll('[text-split]').forEach((el) => {
         new SplitType(el, {
             type : "words, char",
             tagName : "span"
         })
     });
+}
+
+document.fonts.ready.then(() => {
+   split();
 
    setTimeout(() => {
      const typed = new Typed('#name', {
