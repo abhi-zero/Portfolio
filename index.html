@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./src/styles/style.css" />
   <link rel="stylesheet" href="./src/styles/canvas.css" />
   <link rel="stylesheet" href="./src/styles/helper_classes.css" />
+  <link rel="stylesheet" href="./src/styles/range-styles.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
   <title>Portfolio.me</title>
 </head>
@@ -28,16 +29,16 @@
         </div>
         <div class="nav-links">
           <ul>
-            <li><a class="nav-link" href="">Home</a></li>
-            <li><a class="nav-link" href="">About me</a></li>
-            <li><a class="nav-link" href="">Projects</a></li>
-            <li><a class="nav-link" href="">let's connect</a></li>
+            <li><a class="nav-link" href="#heroSection">Home</a></li>
+            <li><a class="nav-link" href="#aboutMe">About me</a></li>
+            <li><a class="nav-link" href="#projectSection">Projects</a></li>
+            <li><a class="nav-link" href="#contact">let's connect</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <section class="hero-section">
+    <section class="hero-section" id="heroSection">
       <div class="canvas-div">
         <canvas class="canvas1" id="canvas1"></canvas>
       </div>
@@ -47,15 +48,15 @@
           things.
         </h1>
         <div class="cta">
-          <button class="button primary-btn">See My Learning Projects</button>
+          <button class="button primary-btn" id="seeProjects">See My Learning Projects</button>
         </div>
       </div>
       <div class="cta-section">
-        <a href="">Scroll Down <i class="ri-arrow-down-s-line"></i></a>
+        <a href="#aboutMe">Scroll Down <i class="ri-arrow-down-s-line arrow"></i></a>
       </div>
     </section>
 
-    <section class="about-me section">
+    <section class="about-me section" id="aboutMe">
       <div class="intro">
         <h1 class="heading">Why I Code</h1>
         <h4 class="subtext">
@@ -83,105 +84,108 @@
               <rect class="mask" y="-49" height="99" fill="black" />
             </g>
           </svg>
-         <div class="timeline-event">
-           <a href="#article1" data-college-days>College Dayz</a>
-          <a href="#article2" data-tutorial-hell>Tutorial Hell</a>
-          <a href="#article3" data-now>Now</a>
-         </div>
+          <div class="timeline-event">
+            <a href="#article1" data-college-days>College Dayz</a>
+            <a href="#article2" data-tutorial-hell>Tutorial Hell</a>
+            <a href="#article3" data-now>Now</a>
+          </div>
           <div class="content">
             <!-- College Days -->
             <article class="phase" id="article1">
-              <h3 class="anim">The Post-COVID Coders Club <span class="accord-toggle"><i class="ri-arrow-down-s-line"></i></span></h3>
+              <h3 class="anim">The Post-COVID Coders Club <span class="accord-toggle"><i
+                    class="ri-arrow-down-s-line"></i></span></h3>
               <div class="article-content close">
-                 <p class="anim">
-                I started coding in college because I chose to pursue a
-                Bachelor of Computer Applications (BCA). My admission took
-                place post-COVID, which meant adjusting to a new normal of
-                learning. But let me tell you, the
-                <strong class="teal">best year</strong> was my 3rd year!
-              </p>
-              <p class="anim">
-                There was this <strong class="pink">girl I talked to daily</strong>—don’t
-                worry, not a love story, just a fun one. And I teamed up with
-                friends to build my first project: a VB.NET Grocery Store
-                Management System.
-              </p>
-              <ol>
-                <li class="anim">Staff ranking and info</li>
-                <li class="anim">Dynamic stock updates</li>
-                <li class="anim">Billing system (print bills only)</li>
-                <li class="anim">Auto-decrease in stock quantity after purchases</li>
-              </ol>
-              <p class="anim">
-                That project didn’t just teach us coding—it taught us
-                teamwork, laughter, and the joy of finally getting something
-                to work after hours of debugging.
-              </p>
+                <p class="anim">
+                  I started coding in college because I chose to pursue a
+                  Bachelor of Computer Applications (BCA). My admission took
+                  place post-COVID, which meant adjusting to a new normal of
+                  learning. But let me tell you, the
+                  <strong class="teal">best year</strong> was my 3rd year!
+                </p>
+                <p class="anim">
+                  There was this <strong class="pink">girl I talked to daily</strong>—don’t
+                  worry, not a love story, just a fun one. And I teamed up with
+                  friends to build my first project: a VB.NET Grocery Store
+                  Management System.
+                </p>
+                <ol>
+                  <li class="anim">Staff ranking and info</li>
+                  <li class="anim">Dynamic stock updates</li>
+                  <li class="anim">Billing system (print bills only)</li>
+                  <li class="anim">Auto-decrease in stock quantity after purchases</li>
+                </ol>
+                <p class="anim">
+                  That project didn’t just teach us coding—it taught us
+                  teamwork, laughter, and the joy of finally getting something
+                  to work after hours of debugging.
+                </p>
               </div>
             </article>
 
             <!-- Tutorial Hell -->
             <article class="phase" id="article2">
-              <h3 class="anim">Tutorial Hell—Population: Me <span class="accord-toggle"><i class="ri-arrow-down-s-line"></i></span></h3>
+              <h3 class="anim">Tutorial Hell—Population: Me <span class="accord-toggle"><i
+                    class="ri-arrow-down-s-line"></i></span></h3>
               <div class="article-content close">
-              <p class="anim">
-                After graduation, I decided I wanted to become a
-                <strong class="purple">frontend developer</strong>. So, I went back to the
-                basics—HTML, CSS, and JavaScript. For the first 10-15 days, I
-                felt like I was learning... but then I realized I was just
-                <strong >watching tutorials without practicing.</strong>
-              </p>
-              <p class="anim">It was a cycle:</p>
-              <ol>
-                <li class="anim">Watch tutorial.</li>
-                <li class="anim">Take notes.</li>
-                <li class="anim">Feel productive.</li>
-                <li class="anim">Repeat—without ever writing actual code!</li>
-              </ol>
-              <p class="anim">
-                Then one day, I stumbled upon a YouTuber who said,
-                <em>'Make projects, even if they’re garbage.'</em> And that
-                hit me! I realized that
-                <strong>building bad projects</strong> is still better than
-                watching hours of tutorials. So, I rolled up my sleeves and
-                started making things, even if they were imperfect.
-              </p>
+                <p class="anim">
+                  After graduation, I decided I wanted to become a
+                  <strong class="purple">frontend developer</strong>. So, I went back to the
+                  basics—HTML, CSS, and JavaScript. For the first 10-15 days, I
+                  felt like I was learning... but then I realized I was just
+                  <strong>watching tutorials without practicing.</strong>
+                </p>
+                <p class="anim">It was a cycle:</p>
+                <ol>
+                  <li class="anim">Watch tutorial.</li>
+                  <li class="anim">Take notes.</li>
+                  <li class="anim">Feel productive.</li>
+                  <li class="anim">Repeat—without ever writing actual code!</li>
+                </ol>
+                <p class="anim">
+                  Then one day, I stumbled upon a YouTuber who said,
+                  <em>'Make projects, even if they’re garbage.'</em> And that
+                  hit me! I realized that
+                  <strong>building bad projects</strong> is still better than
+                  watching hours of tutorials. So, I rolled up my sleeves and
+                  started making things, even if they were imperfect.
+                </p>
               </div>
             </article>
 
             <!-- Current Mindset -->
             <article class="phase" id="article3">
-              <h3 class="anim">Imperfect Projects, Perfect Progress <span class="accord-toggle"><i class="ri-arrow-down-s-line"></i></span></h3>
+              <h3 class="anim">Imperfect Projects, Perfect Progress <span class="accord-toggle"><i
+                    class="ri-arrow-down-s-line"></i></span></h3>
               <div class="article-content close">
-              <p class="anim">These days, I follow a simple mantra:</p>
-              <ol>
-                <li class="anim">Do a little research.</li>
-                <li class="anim">Start building, no matter how messy.</li>
-                <li class="anim">Get stuck (because I always do).</li>
-                <li class="anim">Watch tutorials or search for solutions.</li>
-                <li class="anim">Refactor later.</li>
-              </ol>
-              <p class="anim">
-                Sure, my projects might not be perfect at first, but they get
-                better as I go.
-                <strong class="green">Every mistake is a lesson, every refactor is
-                progress.</strong>
-                Little by little, I’m getting there—and having fun along the
-                way.
-              </p>
+                <p class="anim">These days, I follow a simple mantra:</p>
+                <ol>
+                  <li class="anim">Do a little research.</li>
+                  <li class="anim">Start building, no matter how messy.</li>
+                  <li class="anim">Get stuck (because I always do).</li>
+                  <li class="anim">Watch tutorials or search for solutions.</li>
+                  <li class="anim">Refactor later.</li>
+                </ol>
+                <p class="anim">
+                  Sure, my projects might not be perfect at first, but they get
+                  better as I go.
+                  <strong class="green">Every mistake is a lesson, every refactor is
+                    progress.</strong>
+                  Little by little, I’m getting there—and having fun along the
+                  way.
+                </p>
               </div>
             </article>
           </div>
           <div class="chart">
             <div class="cursor-bg"></div>
-           <div class="skill-container">
-             <h3>My Skills</h3>
-          
-            <div class="skills-section">
-             <!-- dynamically generate -->
-             
+            <div class="skill-container">
+              <h3>My Skills</h3>
+
+              <div class="skills-section">
+                <!-- dynamically generate -->
+
+              </div>
             </div>
-             </div>
             <div class="bug-meme">
               <div class="meme">
                 <p class="meme-text" text-split word-rotate-in></p>
@@ -193,95 +197,132 @@
           </div>
 
         </div>
-        </div>
+      </div>
       </div>
     </section>
 
-    <section class=" project-section section">
+    <section class=" project-section section" id="projectSection">
       <div class="heading-section">
         <h1 class="heading">My learning</h1>
         <h3 class="subtext">Here are a few projects I've built</h3>
       </div>
       <div class="projects">
-            <div class="projects-lists">
-              <ol id="projectList">
-                <!-- Project list items will be dynamically generated and inserted here by load_projects.js -->
-              </ol>
-            </div>
-           
-            <div class="projects-content">
-             <!-- Project cards will be dynamically rendered here when a project is selected from the list -->
-            </div>
-           
+        <div class="projects-lists">
+          <ol id="projectList">
+            <!-- Project list items will be dynamically generated and inserted here by load_projects.js -->
+          </ol>
         </div>
+
+        <div class="projects-content">
+          <!-- Project cards will be dynamically rendered here when a project is selected from the list -->
+        </div>
+
+      </div>
     </section>
-    <section class="contact section">
+    <section class="contact section" id="contact">
       <div class="heading-section">
         <h1 class="heading">Let's connect</h1>
-        <p class="description">I’m looking for collaborators, mentors, or feedback on my projects. Even a coffee chat helps!</p>
+        <p class="description">I’m looking for collaborators, mentors, or feedback on my projects. Even a coffee chat
+          helps!</p>
       </div>
       <div class="canvas-div">
         <canvas class="canvas2" id="canvas2"></canvas>
       </div>
       <div class="contact-intractiveelem">
-        <form action="">
+        <form action="https://formspree.io/f/xgvyralz" method="post">
           <div class="names row">
             <div class="inputs elems">
               <label for="firstName" class="label">First Name</label>
               <input class="input" type="text" name="firstname" id="firstName" placeholder="Abhi" required>
-              <p class="error">kjsdkj</p>
+              <p class="error" data-error-for="firstName">kjsdkj</p>
             </div>
             <div class="inputs elems">
               <label for="lastName" class="label">Last Name</label>
               <input type="text" class="input" name="lastname" id="lastName" placeholder="Bhatti" required>
-              <p class="error">kjsdkj</p>
+              <p class="error" data-error-for="lastName">kjsdkj</p>
             </div>
           </div>
           <div class="email-phone row">
-             <div class="inputs elems">
+            <div class="inputs elems">
               <label for="eMail " class="label">Your email</label>
               <input type="email" class="input" name="email" id="eMail" placeholder="abhi@mail.com" required>
-              <p class="error">kjsdkj</p>
+              <p class="error" data-error-for="eMail">kjsdkj</p>
             </div>
             <div class="inputs elems ">
               <label for="phoneNo" class="label">Phone Number</label>
               <input type="text" class="input" name="phoneno" id="phoneNo" placeholder="+12 123 456 7890" required>
-              <p class="error">kjsdkj</p>
+              <p class="error" data-error-for="phoneNo">kjsdkj</p>
             </div>
           </div>
           <div class="message">
             <label class="label" for="textBox">Your message</label>
-            <textarea class="input" name="" id="textBox" placeholder="leave your message"></textarea>
+            <textarea class="input" name="" id="textBox" placeholder="leave your message" rows="6"></textarea>
           </div>
           <div class="disclaimer-text">
-            <p class="disclaimer">I don’t like spam either, so rest assured, your info stays private and is used only to respond to your message.</p>
+            <p class="disclaimer">I don’t like spam either, so rest assured, your info stays private and is used only to
+              respond to your message.</p>
           </div>
           <div class="cta">
             <button type="submit" class="button primary-btn">Send message</button>
           </div>
         </form>
-        <div class="intractive-elem">
-            <div class="controls">
-        <button class="random-btn btn">Randomiz!</button>
+        <dialog id="thanksMsg">
 
-        <div class="spread">
-            <input type="range" name="" id="spread" min="0.1" max="3.1" step=".1"  value="1">
-            <label for="spread">Spread: </label>
-        </div>
-        <div class="sides">
-            <input type="range" name="" id="sides" min="1" max="15" step="1"  value="5">
-            <label for="sides">sides: </label>
-        </div>
-         <button class="reset-btn btn">Reset</button>
-    </div>
+          <button class="close-btn">&times;</button>
+          <h1>Thank You!</h1>
+          <p>Your message has been submitted successfully. I’ll get back to you as soon as possible.</p>
+
+
+        </dialog>
+        <div class="intractive-elem">
+          <p class="message">Click to customize the background!</p>
+          <button class="button primary-btn open-control"><i class="ri-quill-pen-ai-fill"></i></button>
+          <div class="controls close">
+            <button class="random-btn button primary-btn">Randomiz!</button>
+
+            <div class="spread">
+              <input type="range" name="" id="spread" min="0.1" max="3.1" step=".1" value="1">
+              <label for="spread">Spread: </label>
+            </div>
+            <div class="sides">
+              <input type="range" name="" id="sides" min="1" max="15" step="1" value="5">
+              <label for="sides">sides: </label>
+            </div>
+            <div class="line-Width">
+              <input type="range" name="" id="lineWidth" min="5" max="80" step="1" value="5">
+              <label for="lineWidth">line Width: </label>
+            </div>
+            <button class="reset-btn button primary-btn">Reset</button>
+          </div>
         </div>
       </div>
     </section>
     <section class="fake"></section>
   </main>
+ <footer>
+  <div class="footer-content">
+    <div class="footer-text">
+      &copy; 2024 Abhinandan Bhatti. All rights reserved.<br>
+      <small>Based in India (IST)</small>
+    </div>
+    <div class="footer-social">
+      <a href="https://github.com/abhi-zero" target="_blank" aria-label="GitHub">
+        <i class="ri-github-fill"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/abhinandan-bhatti/" target="_blank" aria-label="LinkedIn">
+        <i class="ri-linkedin-box-fill"></i>
+      </a>
+      <a href="https://twitter.com/AbhiBhatti" target="_blank" aria-label="Twitter">
+        <i class="ri-twitter-fill"></i>
+      </a>
+    </div>
+  </div>
+</footer>
 
-  <!-- <script type="module" src="./src/scripts/chart.js"></script> -->
-   <script type="module" src="./src/scripts/load-projects.js"></script>
+
+
+  <script type="module" src="./src/scripts/load-projects.js"></script>
+  <script type="module" src="./src/scripts/validation.js"></script>
   <script type="module" src="./src/scripts/animation.js"></script>
   <script type="module" src="./src/scripts/textAnimations.js"></script>
   <script type="module" src="./src/scripts/canvas.js"></script>
