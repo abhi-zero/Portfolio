@@ -84,18 +84,13 @@ function aboutTimeline(){
 });
 
 sections.forEach((section) => {
-  // grab the scoped text
-  let text = section.querySelectorAll(".anim");
   
-  // bump out if there's no items to animate
-  if(text.length === 0)  return 
-  
+
   // do a little stagger
-  gsap.from(text, {
-    y: -130,
+  gsap.from(section, {
+    y: -50,
     opacity: 0,
     duration: 2,
-    ease: "elastic",
     stagger: 0.1,
     scrollTrigger: {
       trigger: section,
