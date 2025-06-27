@@ -290,7 +290,7 @@ header nav .nav-links ul li a:hover:after {
 .hero-section .cta-section a {
   font-size: 1.2rem;
   letter-spacing: 2px;
-  color: var(--font-color-light);
+  color: var(--teal-light-color);
 }
 
 .about-me {
