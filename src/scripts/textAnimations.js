@@ -22,7 +22,7 @@ function createScrollTriger(triggerElemnet, timeline){
   ScrollTrigger.create({
     trigger: triggerElemnet,
     start : "top bottom",
-    markers:true,
+    // markers:true,
     onLeave : () =>{
       timeline.progress(0).paused()
     }      
@@ -30,7 +30,7 @@ function createScrollTriger(triggerElemnet, timeline){
   ScrollTrigger.create({
     trigger: triggerElemnet,
     start : "top 80%",
-    markers:true,
+    // markers:true,
     onEnter : () =>{
       timeline.play();
     }

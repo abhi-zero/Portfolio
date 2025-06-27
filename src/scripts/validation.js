@@ -10,8 +10,6 @@ function getErrorElementForInput(input) {
   return document.querySelector(`.error[data-error-for="${input.id}"]`);
 }
 
-let isValid = false;
-console.log(isValid);
 
 
 function nameValidate(name, errorElement) {

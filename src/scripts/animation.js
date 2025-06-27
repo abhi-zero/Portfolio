@@ -56,7 +56,7 @@ export function navAnime() {
             tl.play();
             button.dataset.stage = "open";
         }
-        console.log(button.dataset.stage);
+        // console.log(button.dataset.stage);
     });
 });
 }
@@ -71,7 +71,7 @@ function aboutTimeline(){
       scrub: 1,
       start : "top 2%",
       end: "+=3000",
-      markers:true
+      // markers:true
     }
   })
   gsap.to(mask, {
@@ -96,7 +96,7 @@ sections.forEach((section) => {
       trigger: section,
       containerAnimation: scrollTween,
       start: "left center",
-      markers: true,
+      // markers: true,
     }
 
   });

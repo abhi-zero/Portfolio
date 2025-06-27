@@ -90,9 +90,9 @@ const allProjects = [
 const windowHeight = window.innerHeight;
 const windowWidth = window.innerWidth;
 
-console.log(windowHeight,windowWidth);
+// console.log(windowHeight,windowWidth);
 const placeholderImgWidth = `${windowWidth - 200}px`;
-console.log(placeholderImgWidth);
+// console.log(placeholderImgWidth);
 
 
 
@@ -184,7 +184,7 @@ function generatedProjectCard(project) {
     projectsContainer.appendChild(projectDiv);
      const bgColor = project.textBgCssColor 
       myFunction_set(bgColor);
-      console.log(projectDiv);
+      // console.log(projectDiv);
       
     
 }
@@ -198,7 +198,7 @@ function generateList(project,idx){
     listHeading4.setAttribute("data-id", idx);
     list.appendChild(listHeading4);
     projectList.appendChild(list);
-    console.log(listHeading4);
+    // console.log(listHeading4);
 }
 
 
@@ -231,7 +231,7 @@ projectList.addEventListener("click", (event) => {
 
     // Find the project by index (since generateList uses idx as data-id)
     const project = allProjects[clickedId];
-    console.log(project);
+    // console.log(project);
     if (project) {
       generatedProjectCard(project);
       fade();
