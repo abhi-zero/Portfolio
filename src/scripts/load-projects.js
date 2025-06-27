@@ -1,11 +1,10 @@
 import { createElement } from "./main.js";
 import { fade } from "./animation.js";
-import { animeRotateIn } from "./textAnimations.js";
 
 const allProjects = [
   {
     projectImg: {
-      src: "./src/assets/images/project_images/project1.png",
+      src: "./assets/images/project_images/project1.png",
       altText: "Img of a ImgStore Project",
     },
     projectDetails: {
@@ -17,10 +16,10 @@ const allProjects = [
     },
     technologies: {
         techImg: [
-            "./src/assets/images/skill_images/html5.svg",
-            "./src/assets/images/skill_images/css3.svg",
-            "./src/assets/images/skill_images/javascript.svg",
-            "./src/assets/images/skill_images/gsap.svg",
+            "./assets/images/skill_images/html5.svg",
+            "./assets/images/skill_images/css3.svg",
+            "./assets/images/skill_images/javascript.svg",
+            "./assets/images/skill_images/gsap.svg",
           ],
           techAltText: ["HTML", "CSS", "JavaScript","GSAP"],
         },
@@ -32,7 +31,7 @@ const allProjects = [
   },
   {
     projectImg: {
-      src: "./src/assets/images/project_images/ZapQuiz.png",
+      src: "./assets/images/project_images/ZapQuiz.png",
       altText: "Img of a ZapQuiz Project",
     },
     projectDetails: {
@@ -44,11 +43,11 @@ const allProjects = [
     },
     technologies: {
       techImg: [
-        "./src/assets/images/skill_images/html5.svg",
-        "./src/assets/images/skill_images/css3.svg",
-        "./src/assets/images/skill_images/javascript.svg",
-        "./src/assets/images/skill_images/gsap.svg",
-        "./src/assets/images/skill_images/locoMotive.png",
+        "./assets/images/skill_images/html5.svg",
+        "./assets/images/skill_images/css3.svg",
+        "./assets/images/skill_images/javascript.svg",
+        "./assets/images/skill_images/gsap.svg",
+        "./assets/images/skill_images/locoMotive.png",
       ],
       techAltText: ["HTML", "CSS", "JavaScript", "GSAP", "Loco Motive"],
     },
@@ -60,7 +59,7 @@ const allProjects = [
   },
   {
     projectImg: {
-      src: "./src/assets/images/project_images/Daily-Quote-App.png",
+      src: "./assets/images/project_images/Daily-Quote-App.png",
       altText: "Img of a Daily Quote  Project",
     },
     projectDetails: {
@@ -72,10 +71,10 @@ const allProjects = [
     },
     technologies: {
       techImg: [
-        "./src/assets/images/skill_images/html5.svg",
-        "./src/assets/images/skill_images/css3.svg",
-        "./src/assets/images/skill_images/javascript.svg",
-        "./src/assets/images/skill_images/gsap.svg",
+        "./assets/images/skill_images/html5.svg",
+        "./assets/images/skill_images/css3.svg",
+        "./assets/images/skill_images/javascript.svg",
+        "./assets/images/skill_images/gsap.svg",
       ],
       techAltText: ["HTML", "CSS", "JavaScript", "GSAP"],
     },

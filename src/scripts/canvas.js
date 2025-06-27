@@ -342,7 +342,7 @@ window.onload = function () {
 
 // Update Sliders and Labels
 function updateSliders() {
-  console.log("im working");
+  // console.log("im working");
 
   slideSpread.value = fractal.spread;
   labelSpread.innerHTML = `Spread: ${Number(fractal.getSpread).toFixed(1)}`;
@@ -352,12 +352,12 @@ function updateSliders() {
   slideLineWidth.value = fractal.lineWidth; // Access through the getter
   labelLineWidth.innerHTML = `Line Width: ${(fractal.getLineWidth).toFixed(0)}`;
 
-  console.log("range values", {
-    input: slideSide.value,
-    sideLabel: labelSide.innerHTML,
-    input2: slideSpread.value,
-    spreadLabel: labelSpread.innerHTML,
-  });
+  // console.log("range values", {
+  //   input: slideSide.value,
+  //   sideLabel: labelSide.innerHTML,
+  //   input2: slideSpread.value,
+  //   spreadLabel: labelSpread.innerHTML,
+  // });
 }
 
 slideSpread.addEventListener("change", (e) => {
