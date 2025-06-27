@@ -87,6 +87,15 @@ const allProjects = [
   },
 ];
 
+const windowHeight = window.innerHeight;
+const windowWidth = window.innerWidth;
+
+console.log(windowHeight,windowWidth);
+const placeholderImgWidth = `${windowWidth - 200}px`;
+console.log(placeholderImgWidth);
+
+
+
 // Get the root element
 let  r = document.querySelector(':root');
 
@@ -108,6 +117,9 @@ function myFunction_set(color) {
 function generatedProjectCard(project) {
     const projectsContainer = document.querySelector(".projects-content");
     const projectDiv = createElement("div", "project");
+
+    const imgPlaceholder = createElement("div","placeholder");
+    imgPlaceholder.style.backgroundImage = `url(https://placehold.co/${placeholderImgWidth})`
 
     // Project Image
     const projectImg = createElement("img", "projectImg");
@@ -164,7 +176,8 @@ function generatedProjectCard(project) {
     projectTextContainer.appendChild(projectTechs);
     projectTextContainer.appendChild(projectLinks);
 
-    projectDiv.appendChild(projectImg);
+    imgPlaceholder.appendChild(projectImg);
+    projectDiv.appendChild(imgPlaceholder);
     projectDiv.appendChild(projectTextContainer);
 
     
