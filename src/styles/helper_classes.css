@@ -6,25 +6,26 @@
     transition: all .3s ease-in-out;
 }
 
+
 .primary-btn{
-    background-color: var(--darkGray-color);
-    color: white;
+    background-color: var(--primary-btn-bg);
+    color: var(--primary-btn-color);
 }
 
 .primary-btn:hover{
-    background-color: var(--teal-light-color);
-    color:  var(--darkGray-color);
+    background-color: var(--primary-btn-bg-hover);
+    color:  var( --primary-btn-color-hove);
     filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.888));
 }
 
 .secondary-btn{
-    background-color: var(--teal-light-color);
-    color: var(--darkGray-color);
+    background-color: var(--secondary-btn-bg);
+    color: var(--secondary-btn-color);
 }
 
 .secondary-btn:hover{
-    background-color: var(--darkGray-color);
-    color: var(--teal-light-color);
+    background-color: var(--secondary-btn-bg-hover);
+    color: var(--secondary-btn-color-hover);
     filter: drop-shadow(1px 2px 5px rgba(0, 0, 0, 0.888));
 }
 

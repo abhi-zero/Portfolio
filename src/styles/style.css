@@ -54,16 +54,23 @@
   --body-bg: var(--darkGray-color);
   --font-color: #fff;
   --font-color-dark: var(--darkGray-dark-color);
+  --font-color-light: var(--Gray-light-color);
   --heading-color: var(--teal-light-color);
   --card-bg: var(--darkGray-light-color);
   --input-bg: var(--darkGray-dark-color);
-  --primary-btn-bg: var(--teal-light-color);
+  --primary-btn-bg: var(--darkGray-color);
   --primary-btn-color: #fff;
-  --secondary-btn-bg: var(--darkGray-color);
-  --secondary-btn-color: var(--teal-light-color);
-  --border-color: var(--Gray-dark-color);
+  --primary-btn-bg-hover: var(--teal-light-color);
+  --primary-btn-color-hover: var(--darkGray-color);
+  --secondary-btn-bg: var(--teal-light-color);
+  --secondary-btn-color: var(--darkGray-color);
+  --secondary-btn-bg-hover: var(--darkGray-color);
+  --secondary-btn-color-hover: var(--teal-light-color);
+  --border-color0: var(--Gray-light-color);
+  --border-color1: var(--Gray-dark-color);
+  --border-color2: white;
+  --border-color3: var(--teal-light-color);
   --error-color: var(--Redorange-light-color);
-  --success-color: var(--Green-light-color);
   --link-color: var(--teal-light-color);
   --footer-bg: var(--darkGray-color);
   --footer-color: var(--teal-light-color);
@@ -106,8 +113,8 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   font-family: system-ui, sans-serif;
-  background-color: var(--darkGray-color);
-  color: white;
+  background-color: var(--body-bg);
+  color: var(--font-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: var(--ff1);
@@ -189,8 +196,8 @@ main {
 header nav {
   padding: 10px 100px;
   position: relative;
-  background-color: var(--darkGray-color);
-  border-block: 1px solid white;
+  background-color: var(--body-bg);
+  border-block: 1px solid var(--border-color2);
 }
 
 header nav .logo-menucta {
@@ -270,7 +277,7 @@ header nav .nav-links ul li a:hover:after {
   letter-spacing: 2px;
 }
 .name {
-  color: var(--teal-light-color);
+  color: var(--heading-color);
   padding-left: 10px;
 }
 
@@ -283,7 +290,7 @@ header nav .nav-links ul li a:hover:after {
 .hero-section .cta-section a {
   font-size: 1.2rem;
   letter-spacing: 2px;
-  color: var(--teal-light-color);
+  color: var(--font-color-light);
 }
 
 .about-me {
@@ -296,8 +303,8 @@ header nav .nav-links ul li a:hover:after {
 .heading {
   font-size: 4vw;
   width: fit-content;
-  color: var(--teal-light-color);
-  border-bottom: 5px solid var(--Gray-dark-color);
+  color: var(--heading-color);
+  border-bottom: 5px solid var(--border-color1);
   line-height: 1.2;
 }
 
@@ -314,7 +321,7 @@ header nav .nav-links ul li a:hover:after {
   width: fit-content;
   font-size: 2vw;
   margin-bottom: 30px;
-  border-bottom: 2px solid var(--teal-light-color);
+  border-bottom: 2px solid var(--border-color3);
 }
 
 .wrapper .container {
@@ -368,13 +375,13 @@ svg .mask {
 
 .phase h3 {
   font-size: 2vw;
-  border-bottom: 2px solid var(--teal-light-color);
+  border-bottom: 2px solid var(--border-color3);
   font-weight: 500;
 }
 .phase p {
   font-size: 1.2vw;
   font-weight: 400;
-  color: var(--Gray-light-color);
+  color: var(--font-color-dark);
 }
 
 .phase strong {
@@ -382,9 +389,9 @@ svg .mask {
 }
 
 .phase ol li {
-  color: var(--Gray-light-color);
+  color: var(--font-color-dark);
   width: fit-content;
-  border-bottom: 1.5px solid var(--Gray-light-color);
+  border-bottom: 1.5px solid var(--border-color0);
   font-size: 1.2vw;
 }
 
@@ -432,7 +439,7 @@ svg .mask {
 .skill-container h3 {
   width: fit-content;
   font-size: 2vw;
-  border-bottom: 2px solid var(--teal-light-color);
+  border-bottom: 2px solid var(--border-color3);
   font-weight: 500;
 }
 
@@ -472,7 +479,7 @@ svg .mask {
 .skill h3 {
   font-size: 2vw;
   font-weight: 400;
-  color: var(--Gray-light-color);
+  color: var(--font-color-light);
   border: none;
   position: relative;
   cursor: pointer;
@@ -597,8 +604,6 @@ svg .mask {
   opacity: 1;
   transition: opacity 600ms ease-in-out;
 }
-
-
 
 .project-section .projects {
   height: 90vh;
@@ -750,12 +755,12 @@ form .input {
 }
 
 form .elems .error {
- opacity: 0;
+  opacity: 0;
   grid-column: 2 / -1;
   grid-row: 1;
   font-size: 0.75rem;
   text-align: right;
-  color: var(--Redorange-light-color);
+  color:  var(--error-color);
   transition: opacity 600ms ease-in-out;
 }
 
@@ -797,8 +802,8 @@ form .disclaimer {
 
 /* Footer Styling */
 footer {
-  background-color: var(--darkGray-color);
-  color: var(--teal-light-color);
+  background-color: var(--body-bg);
+  color: var(--heading-color);
   text-align: center;
   padding: 20px;
   font-family: Arial, sans-serif;
@@ -819,7 +824,7 @@ footer {
 }
 
 .footer-social a {
-  color: var(--Gray-light-color);
+  color: var(--font-color-dark);
   font-size: 24px;
   transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
 }
@@ -830,11 +835,8 @@ footer {
 }
 
 .footer-text small {
-  color: var(--Gray-light-color);
+  color: var(--font-color-light);
 }
-
-
-
 
 #thanksMsg {
   position: fixed;
@@ -849,7 +851,7 @@ footer {
 }
 
 #thanksMsg h1 {
-  color: var(--teal-light-color);
+  color: var(--heading-color);
   margin-bottom: 1rem;
 }
 
@@ -943,9 +945,8 @@ footer {
     height: 100%;
     display: block;
     padding: 20px 0;
-    background: none;;
+    background: none;
   }
-  
 
   .phase h3 {
     font-size: 1.5rem;
@@ -1031,7 +1032,7 @@ footer {
     grid-column: 5 / 6;
   }
 
-  .project-section .projects{
+  .project-section .projects {
     height: 100%;
   }
 
@@ -1199,12 +1200,12 @@ footer {
     gap: 20px;
   }
 
-  form .elems{
+  form .elems {
     display: flex;
     flex-direction: column;
   }
 
-  form .elems .error{
+  form .elems .error {
     text-align: left;
   }
 
