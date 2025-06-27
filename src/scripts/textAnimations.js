@@ -9,7 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 function scrollIndicator(){
-    const indicator =  document.querySelectorAll('a i');
+    const indicator =  document.querySelectorAll('a .arrow');
     gsap.from(indicator,{
         y : 5,
         repeat: -1,
