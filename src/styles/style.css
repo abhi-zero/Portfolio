@@ -381,7 +381,7 @@ svg .mask {
 .phase p {
   font-size: 1.2vw;
   font-weight: 400;
-  color: var(--font-color-dark);
+  color: var(--font-color-light);
 }
 
 .phase strong {
@@ -389,7 +389,7 @@ svg .mask {
 }
 
 .phase ol li {
-  color: var(--font-color-dark);
+  color: var(--font-color-light);
   width: fit-content;
   border-bottom: 1.5px solid var(--border-color0);
   font-size: 1.2vw;
@@ -824,7 +824,7 @@ footer {
 }
 
 .footer-social a {
-  color: var(--font-color-dark);
+  color: var(--font-color-light);
   font-size: 24px;
   transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
 }
